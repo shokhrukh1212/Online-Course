@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM EVENTS</title>
+    <style>
+      div#firstDiv {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      div#parent {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        background-color: aqua;
+      }
+
+      div#parent2 {
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+        background-color: aqua;
+      }
+
+      p#child,
+      p#child2 {
+        background-color: blue;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      h1#h1-child {
+        background-color: red;
+        padding: 5px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+
+    <input type="button" onclick="alert('Clicked')" value="click" />
+    <input type="text" name="text" id="text" onchange="alert('Onchage')" />
+    <button onclick="alert(this.innerHTML)">Click me</button>
+    <div id="firstDiv">div</div>
+    <button onclick="removeEventFromDiv()">Remove event from first div</button>
+
+    <!--  Bubbling and Capturing examples   -->
+    <div id="parent">
+      Parent div
+      <p id="child">Child p</p>
+    </div>
+
+    <!--  Event Delegation examples   -->
+    <div id="parent2">
+      <p id="child2">Child p</p>
+      <h1 id="h1-child">Lorem ipsum dolor sit amet.</h1>
+      <button id="childButton">Child button</button>
+    </div>
+
+    <!--  Event Delegation examples   -->
+    <form style="margin-top: 30px; margin-bottom: 100px">
+      <input type="text" name="name" id="name" placeholder="name" />
+      <input type="submit" value="Submit" id="submitButton" />
+    </form>
+
+    <a href="/here" onclick="event.preventDefault()">Here</a>
+    <script src="./10-lesson.js"></script>
+  </body>
+</html>
