@@ -1,22 +1,17 @@
-import { useState } from "react";
 import "../../styles/StudentsList.css";
 
-function StudentsList({ classname, num }) {
-  const [names, setNames] = useState(["Jasur", "Madina", "Shahlo", "Otabek"]);
-  // const { classname } = props;
-  // const headerStyle = { color: "black", backgroundColor: "red", fontSize: "50px" }
-
+function StudentsList({ classname, names }) {
   return (
     <div>
       <h1 style={{ color: "black", backgroundColor: "red", fontSize: "50px" }}>
         {classname + " sinf o'quvchilari ismlari"}
       </h1>
 
-      <h3>{`Bu sinfda ${num} ta o'quvchi bor`}</h3>
+      <h2>{`Bu sinfda ${names.length} ta o'quvchi bor`}</h2>
       <ul>
-        {names.map((name) => {
+        {names.map((name, index) => {
           return (
-            <li key={name} className="name">
+            <li key={index} className="name">
               {name}
             </li>
           );

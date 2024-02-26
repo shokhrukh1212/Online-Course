@@ -13,3 +13,5 @@
 - appearance - (Ko'rinishi)
 
 ## JSX - JavaScript + XML, Javscript + Html + Css
+
+# State management

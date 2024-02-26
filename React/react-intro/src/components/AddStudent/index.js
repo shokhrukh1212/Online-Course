@@ -1,0 +1,1 @@
+export { NewStudent } from "./NewStudent";
