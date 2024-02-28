@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function DateCounter() {
   const [count, setCount] = useState(0);
   const [step, setStep] = useState(1);
+
+  useEffect(() => {
+    return function () {
+      console.log("Datecounter component DOM dan olib tashlandi");
+    };
+  }, []);
 
   const date = new Date();
   date.setDate(date.getDate() + count);

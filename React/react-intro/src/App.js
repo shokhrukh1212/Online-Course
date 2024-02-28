@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { StudentsList } from "./components/StudentsList";
-import { NewStudent } from "./components/AddStudent";
-import { DateCounter } from "./components/DateCounter";
+// import { StudentsList } from "./components/StudentsList";
+// import { NewStudent } from "./components/AddStudent";
+// import { DateCounter } from "./components/DateCounter";
+import { MoviesList } from "./components/MoviesList";
 
 function App() {
   const [names, setNames] = useState(["Jasur", "Madina", "Shahlo", "Otabek"]);
@@ -18,12 +19,13 @@ function App() {
 
   return (
     <div className="App">
-      <StudentsList classname="9-'B'" names={names} />
+      {/* <StudentsList classname="9-'B'" names={names} />
 
       <NewStudent setNames={setNames} />
       <br />
       <br />
-      <DateCounter />
+      <DateCounter /> */}
+      <MoviesList />
     </div>
   );
 }
