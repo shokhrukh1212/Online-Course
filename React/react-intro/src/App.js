@@ -3,6 +3,7 @@ import { useState } from "react";
 // import { NewStudent } from "./components/AddStudent";
 // import { DateCounter } from "./components/DateCounter";
 import { MoviesList } from "./components/MoviesList";
+import ReducerExample from "./components/ReducerExample/ReducerExample";
 
 function App() {
   const [names, setNames] = useState(["Jasur", "Madina", "Shahlo", "Otabek"]);
@@ -25,7 +26,8 @@ function App() {
       <br />
       <br />
       <DateCounter /> */}
-      <MoviesList />
+      {/* <MoviesList /> */}
+      <ReducerExample />
     </div>
   );
 }
