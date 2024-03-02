@@ -15,3 +15,7 @@
 ## JSX - JavaScript + XML, Javscript + Html + Css
 
 # State management
+
+## Derived state - bu bir nechta state lardan tashkil topgan state, lekin oddiy o'zgaruvchi
+
+# Context API - Prop Drilling muammosini yechadi
